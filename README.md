@@ -6,11 +6,11 @@ Utility for writing raw disk images &amp; hybrid isos to USB keys
 Linux Installation
 ===========
 
-if [ -e /usr/bin/kdesu ]
+    if [ -e /usr/bin/kdesu ]
 	  then sed 's/\/usr\/bin\/xdg-su -c \/usr\/bin\//kdesu /' -i $pkgname.desktop
 	  else sed 's/\/usr\/bin\/xdg-su -c \/usr\/bin\//xdg-su -s /' -i $pkgname.desktop
 	fi
-}
+    }
 	
 
 Then run

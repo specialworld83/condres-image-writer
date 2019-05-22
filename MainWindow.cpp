@@ -632,7 +632,7 @@ AboutLabel::mousePressEvent(QMouseEvent *event)
     QMessageBox about(QMessageBox::Information, "About Condres Imagewriter",
                    "The <b>SUSE Studio Imagewriter</b> is (C) 2012, SUSE Linux Products GmbH<br><br>\
                    The <b>Condres Imagewriter</b> is (C) 2019, Condres OS<br><br>\
-                   It is cheerfully released under the GPL v2 license.  You can find the source code on github: https://github.com/specialworld83/imagewriter<br><br>\
+                   It is cheerfully released under the GPL v2 license.  You can find the source code on github: https://github.com/specialworld83/condres-image-writer<br><br>\
                    It was written by Matt Barringer &lt;matt@incoherent.de&gt;<br>\
                    and modificated to Condres OS Dev team<br>\
                    Please send complaints directly to him.");

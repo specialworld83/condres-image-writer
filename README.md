@@ -22,7 +22,7 @@ Linux kiosk mode
 ===========
 
 The imagewriter also has the capability to be used in "kiosks" that may have external harddrives.  To run in kiosk mode,
-which both ignores large hard drives and marks unknown USB sticks as "SUSE Studio", 
+which both ignores large hard drives and marks unknown USB sticks as "Condres Image Writer", 
 run imagewriter with the -k option.
 
 in order to start the imagewriter with sudo, do the following:

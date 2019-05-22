@@ -6,21 +6,13 @@ Utility for writing raw disk images &amp; hybrid isos to USB keys
 Linux Installation
 ===========
 
-In order to compile, run
-
-** HAL **
-
-    % qmake DEFINES=USEHAL imagewriter.pro
-
-** udisks1 **
-    
-    % qmake DEFINES=USEUDISKS imagewriter.pro
-
-** udisks2 **
-
-    % qmake DEFINES=USEUDISKS2 imagewriter.pro
-
-Failing to specify the define will likely not work out.
+if [ -e /usr/bin/kdesu ]
+	  then sed 's/\/usr\/bin\/xdg-su -c \/usr\/bin\//kdesu /' -i $pkgname.desktop
+	  else sed 's/\/usr\/bin\/xdg-su -c \/usr\/bin\//xdg-su -s /' -i $pkgname.desktop
+	fi
+}
+	qmake-qt5 PREFIX="$pkgdir/usr" DEFINES=USEUDISKS2 imagewriter.pro
+	make
 
 Then run
 

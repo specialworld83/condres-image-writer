@@ -11,12 +11,12 @@ if [ -e /usr/bin/kdesu ]
 	  else sed 's/\/usr\/bin\/xdg-su -c \/usr\/bin\//xdg-su -s /' -i $pkgname.desktop
 	fi
 }
-	qmake-qt5 PREFIX="$pkgdir/usr" DEFINES=USEUDISKS2 imagewriter.pro
-	make
+	
 
 Then run
 
-    % make
+    qmake-qt5 PREFIX="$pkgdir/usr" DEFINES=USEUDISKS2 imagewriter.pro
+	make
 
 Linux kiosk mode
 ===========
